@@ -1,0 +1,273 @@
+*{margin:0;padding:0;box-sizing: border-box;font-family: 'Raleway', sans-serif;}
+html, body{width: 100%; height: 100%; background-color: #FBFCFE;}
+
+.center{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+header{
+    background: url('img/HERO\ BACKGROUND.svg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    align-items: center;
+}
+nav .logo{width: 50%;}
+.logo img{width: 30%;}
+nav .menu{width: 70%; display: flex; justify-content: flex-end; align-items: center; margin-right: 50px;}
+.menu li a{color:#fff; text-decoration: none; font-weight: 300; font-size: 16px;}
+.menu .menu-list{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+.menu-list li, .mobile-btn a{margin: 0 10px;}
+.mobile-btn i{font-size: 30px; color: #fff; display: none; cursor: pointer;}
+
+.btn{
+    text-decoration: none;
+    font-weight: 400; 
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.title{
+    margin-top: 70px;
+    padding: 0 100px;
+    text-align: center;
+}
+.title h1{
+    font-size: 45px;
+    font-weight: 300;
+}
+.title p{
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.title img{
+    width: 50%;
+}
+.clientes{
+    margin: 70px auto;
+    display: flex;
+}
+.clientes img{
+    width: 20%;
+}
+.motivos{
+    margin-bottom: 70px;
+}
+.w30-box{
+    margin: 70px auto;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: nowrap;
+}
+.w30-single{
+    max-width: 30%;
+    min-width: 30%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 20px 40px #2426721C; 
+    padding: 20px 40px;   
+}
+.w30-single img{
+    width: 35%;
+    max-width: 80px;
+    margin-left: -20px;
+    margin-bottom: -10px;
+}
+.w30-single h3{
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.w30-single p{
+    font-size: 12px;
+    font-weight: 300;
+}
+.cta{
+    background-image: url('img/BANNER\ IMG.svg');
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 70px;
+}
+.beneficios{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    align-items: center;
+}
+.box{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+.box h1{
+    font-size: 45px;
+}
+.beneficio-single{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.beneficio-single img{
+    width: 20%;
+}
+.rate{
+    width: 50%;
+}
+.beneficio-single p{
+    font-size: 16px;
+    font-weight: 300;
+}
+.beneficio-img{
+    width: 60%;
+}
+.beneficio-img img{
+    width: 100%;
+}
+div.align{
+    text-align: center;
+    padding: 50px 30px;
+}
+div.align h3{
+    margin: 20px 0;
+}
+div.align p:first-of-type{
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+div.align img:last-of-type{
+    margin-top: 20px;
+}
+.bulet{
+    margin: 0 auto;
+    width: 57px;
+    display: flex;
+    justify-content: space-between;
+}
+.bulet-single{
+    width: 15px;
+    height: 15px;
+    background-color: #D2D8EB;
+    border-radius: 50%;
+}
+.selected{background-color: #255AFF;}
+.depoimento{margin-bottom: 100px;}
+.contato{margin-bottom: 100px;}
+.contato form{
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    padding: 0 2%;
+}
+form input[type=text], input[type=email], textarea{
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #C3CCE8;
+    margin: 10px 0;
+}
+textarea{
+    margin-bottom: 20px;
+    resize: none;
+}
+footer{
+    width: 100%;
+    background-color: #255AFF;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-items: center;
+}
+footer p, footer p a{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 100;
+    margin: 20px auto;
+}
+@media screen and (max-width:854px) {
+    .logo img{
+        width: 40%;
+        min-width: 150px;
+    }
+    .w30-single{
+        padding: 20px 10px;
+    }
+    .w30-box{
+        padding: 0 2%;
+    }
+    .beneficios{
+        padding: 0 2%;
+    }
+    .title h1{
+        font-size: 40px;
+    }
+    .title img{width: 80%;}
+
+}
+@media screen and (max-width:760px){
+    nav .menu{
+        position: relative;
+    }
+    .mobile-btn i{display: block;}
+    nav{position: relative;}
+    nav .menu .menu-list{
+        position: absolute;
+        flex-direction: column;
+        top: 50px;
+        right: 0;
+        width: 0;
+        overflow: hidden;
+        background-color: #0f3fd3;
+        transition: .7s all;
+    }
+    nav.ativo .menu .menu-list{
+        width: 100%;
+    }
+    nav .menu-list li a{
+        padding: 10px 0;
+        display: block;
+    }
+    .mobile-btn{
+        position: relative;
+        right: 0;
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .mobile-btn a.btn{
+        width: 100%;
+    }
+}
+@media screen and (max-width:580px) {
+    .title{
+        padding: 0 2%;
+    }
+    .title img{width: 80%;}
+    .logo img{width: 50%;}
+    .w30-box{
+        flex-wrap: wrap;
+        flex-direction: row;  
+        justify-content: center;  
+    }
+    .w30-single{
+        max-width: 100%;
+        margin: 10px;
+        text-align: center;
+        min-width: 100%;
+        padding-bottom: 60px;
+    }
+}
